@@ -16,9 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class DefaultBiomeFeaturesMixin {
 
     @Inject(method = "addMonsters", at = @At(value = "HEAD"))
-    private static void addGiant(SpawnSettings.Builder builder, int zombieWeight, int zombieVillagerWeight, int skeletonWeight, CallbackInfo ci) {
-
-
+    private static void addGiant(SpawnSettings.Builder builder, int zombieWeight, int zombieVillagerWeight, int skeletonWeight, boolean drowned, CallbackInfo ci) {
         ConfigHandler<Config> handler = GiantAI.CONFIG_HANDLER;
 
         if(handler.getConfig() == null)

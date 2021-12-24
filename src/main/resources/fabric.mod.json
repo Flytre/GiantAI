@@ -23,7 +23,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.10.8",
-    "minecraft": "1.17.x",
-    "flytre_lib" : ">=0.2.20"
+    "minecraft": "1.18.x",
+    "flytre_lib" : ">=1.4.4"
   }
 }
