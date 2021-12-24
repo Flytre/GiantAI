@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.flytre.giant_ai.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MobEntityMixin",
+    "GiantEntityMixin",
+    "DefaultBiomeFeaturesMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

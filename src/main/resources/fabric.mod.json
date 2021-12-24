@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "giant_ai",
+  "version": "${version}",
+  "name": "Giant AI",
+  "description": "Adds AI to the Giant mob",
+  "authors": [
+    "Flytre"
+  ],
+  "contact": {
+    "website": "https://www.flytre.net"
+  },
+  "license": "MIT",
+  "icon": "assets/giant_ai/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.flytre.giant_ai.GiantAI"
+    ]
+  },
+  "mixins": [
+    "giant_ai.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "minecraft": "1.17.x",
+    "flytre_lib" : ">=0.2.20"
+  }
+}
